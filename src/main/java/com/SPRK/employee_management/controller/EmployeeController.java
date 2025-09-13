@@ -24,10 +24,10 @@ public class EmployeeController {
 
     }
 
-//    @GetMapping("/employees")
-//    public List<Employee> getAllEmployees(){
-//        return EmployeeService.getAllEmployees();
-//    }
+    @GetMapping("/employees")
+    public List<Employee> getAllEmployees(){
+        return employeeService.getAllEmployees();
+    }
 
     @GetMapping("/employee/{empId}")
     public Employee getEmployee(@PathVariable("empId") String empId) {
